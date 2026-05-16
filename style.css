@@ -1,0 +1,158 @@
+/* -- Colores -- */
+:root {
+    --bg:       #0d1b1a;
+    --surface:  #152e2c;
+    --emerald:  #097969;
+    --blue:     #2C6B67;
+    --text:     #ccd6f6;
+    --muted:    #8892b0;
+    --border:   #1e3e3c;
+}
+
+/* -- Base reset: remueve los espacios predeterminados -- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -- Estilos para el cuerpo de la pagina -- */
+body {
+    font-family: Georgia, serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+/* -- Barra de navegación -- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    position: sticky;
+    top: 0;
+    background-color: var(--surface);
+    border-bottom: 1px solid var(--emerald);
+}
+
+nav span {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--emerald);
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+nav a:hover {
+    color: var(--emerald);
+}
+
+/* -- Secciones: para espacios compartidos -- */
+section {
+    padding: 80px 60px;
+}
+
+/* -- Hero Section -- */
+#hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    color: var(--emerald);
+    margin-bottom: 16px;
+}
+
+#hero p {
+    color: var(--blue);
+    font-size: 1.1rem;
+}
+
+/* -- Headings -- */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--emerald);
+    padding-bottom: 8px;
+    display: inline-block;
+    color: var(--text);
+}
+
+/* -- Los pies jaja -- */
+footer {
+    text-align: center;
+    padding: 40px;
+    color: var(--muted);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border);
+}
+
+/* -- Projects grid -- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 28px;
+    transition: border-color 0.3s;
+}
+
+.project-card:hover {
+    border-color: var(--emerald);
+}
+
+.project-tag {
+    font-size: 0.75rem;
+    color: var(--emerald);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.project-card h3 {
+    font-size: 1.2rem;
+    color: var(--text);
+    margin: 10px 0 12px;
+}
+
+.project-card p {
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.project-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.project-stack span {
+    background-color: var(--bg);
+    color: var(--blue);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 3px 10px;
+    font-size: 0.8rem;
+}
+.skill-pills span {
+    background-color: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--emerald);
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 0.85rem;
+}
