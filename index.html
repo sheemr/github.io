@@ -13,57 +13,91 @@
         <p>Data Scientist, MS Biological Data Science, with experience in Geospatial Data workflows and process automations. </p>
         -->
         <nav>
-            <span>SRR</span> <!-- what is this? -->
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
+            <span>SRR</span>
+            <a href="#about" data-en="About" data-es="Sobre Mí">About</a>
+            <a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a>
+            <a href="#skills" data-en="Skills" data-es="Habilidades">Skills</a>
+            <button id="lang-toggle" class="lang-btn">ES</button>
         </nav>
 
 
-        <section id="hero"> <!-- heroe? opening  --> 
+        <section id="hero">
             <h1>Sheila María Resto Rodríguez</h1>
-            <p> Data Scientist · Geospatial Workflows · Biological Data Science</p>
-        </section>        
+            <p data-en="Data Scientist · Geospatial Workflows · Biological Data Science"
+            data-es="Científica de Datos · Flujos Geoespaciales · Ciencias Biológicas">
+            Data Scientist · Geospatial Workflows · Biological Data Science
+            </p>
+        </section>  
 
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a Data Scientist with a Master's degree in Biological Data Science. I have experience in Geospatial Data workflows and process automations.</p>
+        <section id="about" class="fade-in">
+            <h2 data-en="About Me" data-es="Sobre Mí">About Me</h2>
+            <div class="about-grid">
+
+                <div class="about-text">
+                    <p>Security-cleared Data Scientist with 4 years of progressive experience spanning data science, systems engineering, federal compliance, and military operations. Currently building interactive dashboards and automated data pipelines at Crimson Phoenix.</p>
+                    <p>My research includes a 60-month ecoinformatics study forecasting <em>Vibrio vulnificus</em> outbreak trends using SARIMAX and Random Forest models across 10 years of open-source epidemiological and environmental data. I hold an MS in Biological Data Science from Arizona State University.</p>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-label">Years of Experience</span>
+                    </div>
+
+                    <div class="stat">
+                        <span class="stat-number">MS</span>
+                        <span class="stat-label">Biological Data Science</span>
+                    </div>
+
+                    <div class="stat">
+                        <span class="stat-number">TS/SCI</span>
+                        <span class="stat-label">Cleared + Polygraph</span>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
 
-        <section id="projects"> 
-            <h2>Projects</h2>
+        <section id="projects" class="fade-in"> 
+            <h2 data-en="Projects" data-es="Proyectos">Projects</h2>
             <div class="projects-grid">
+
                 <article class="project-card">
                     <span class="project-tag">Environmental Data Science</span>
-                    <h3>Vibrio Vulnificus Outbreak Analysis</h3>
-                    <p>Analyzed sea surface temperature and salinity data (2018-2024) to identify environmental conditions with Vibrio vulnificus outbreaks along the US East Coast and Gulf</p>
-                    <div class="project-stack">
+                    <h3>Vibrio Vulnificus Outbreak Forecasting</h3>
+                    <p>60-month ecoinformatics study forecasting <em>Vibrio vulnificus</em> case trends using a 10-year open-source epidemiological and environmental dataset from CDC, NOAA, and NASA. Developed SARIMAX and Random Forest Regression models to inform public health strategies. Built a MySQL relational database and delivered insights via Power BI.</p>
+                    <div class="project-stack">   
                         <span>Python</span>
-                        <span>R</span>
-                        <span>BEAM Dashboard</span>
-                        <span>Geospatial</span>
+                        <span>SARIMAX</span>
+                        <span>Random Forest</span>
+                        <span>MySQL</span>
+                        <span>Power BI</span>
+                        <span>CDC | NOAA | NASA Data</span>
                     </div>           
                 </article>
 
                 <article class="project-card">
                     <span class="project-tag">Machine Learning</span>
                     <h3>Hospital Readmission Prediction</h3>
-                    <p>Exploratory data analysis on diabetic patient data examining readmission rates by age, time in hospital, and prior visits. Foundation for a predictive classification model.</p>
+                    <p>Exploratory data analysis on diabetic patient data examining readmission rates by age, time in hospital, and prior visits. Improved dataset quality by 15% through systematic data cleaning. Foundation for a predictive classification model.</p>
                     <div class="project-stack">
                         <span>Python</span>
-                        <span>pandas</span>
-                        <span>Matplotlib</span>                
+                        <span>Pandas</span>
+                        <span>Matplotlib</span>     
+                        <span>Seaborn</span>
+                        <span>Scikit-learn</span>           
                     </div>
-                </article>
+               s </article>
 
                 <article class="project-card">
                     <span class="project-tag">Database & Conservation</span>
                     <h3>IUCN Red List Species Analysis</h3>
-                    <p>Multi-phase database project querying global species conservation data across taxonomy, threatened status, and geographic ocurrence using relational database design.</p>
+                    <p>Multi-phase relational database project querying global species conservation data across taxonomy, threatened status, and geographic occurrence. Designed schema and wrote complex queries to surface patterns across 20+ government and open-source databases.</p>
                     <div class="project-stack">
                         <span>SQL</span>
+                        <span>MySQL</span>
                         <span>Python</span>
                         <span>Jupyter</span>
                     </div>
@@ -73,9 +107,9 @@
         </section>
 
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class=""skills-grid">
+        <section id="skills" class="fade-in">
+            <h2 data-en="Skills" data-es="Habilidades">Skills &amp; Tools</h2>
+            <div class="skills-grid">
             
                 <div class="skill-group">
                     <h4>Languages</h4>
@@ -95,7 +129,7 @@
                     <h4>ML & Modeling</h4>
                     <div class="skill-pills">
                         <span>Machine Learning</span>
-                        <span>Pedictive Modeling</span>
+                        <span>Predictive Modeling</span>
                         <span>Time Series Analysis</span>
                         <span>Scikit-learn</span>
                         <span>TensorFlow</span>
@@ -146,18 +180,23 @@
                 <div class="skill-group">
                     <h4>Compliance</h4>
                     <div class="skill-pills">
-                        <span>Cleared Data Science</span>
+                        <span>Cleared Data Scientist</span>
                         <span>HIPAA</span>
                         <span>FOIA/PA Analysis</span>
                         <span>CFR</span>
                         <span>Data Security</span>
                     </div>
+                </div>
+            </div>
         </section>
 
 
         <footer>
             <p>Sheila María Resto Rodríguez · www.linkedin.com/in/sheilaresto</p>
         </footer>
+
+
+        <script src="script.js"></script>
 
     </body>
 
