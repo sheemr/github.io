@@ -2,11 +2,13 @@
 :root {
     --bg:       #0d1b1a;
     --surface:  #152e2c;
+    --accent:   #b5fff4;
     --emerald:  #179380;
     --blue:     #317873;
     --text:     #ccd6f6;
     --muted:    #8892b0;
     --border:   #1e3e3c;
+
 }
 
 /* -- Base reset: remueve los espacios predeterminados -- */
@@ -42,15 +44,20 @@ nav span {
     color: var(--emerald);
 }
 
-nav a {
-    color: var(--text);
-    text-decoration: none;
-    margin-left: 30px;
+.nav-links {
+    display: flex;
+    gap: 30px;
 }
 
-nav a:hover {
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.nav-links a:hover {
     color: var(--emerald);
 }
+
 
 /* -- Secciones: para espacios compartidos -- */
 section {
@@ -67,7 +74,7 @@ section {
 
 #hero h1 {
     font-size: 3rem;
-    color: var(--emerald);
+    color: var(--accent);
     margin-bottom: 16px;
 }
 
@@ -148,6 +155,28 @@ footer {
     padding: 3px 10px;
     font-size: 0.8rem;
 }
+/* -- Skills -- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.skill-group h4 {
+    color: var(--emerald);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+}
+
+.skill-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
 .skill-pills span {
     background-color: var(--bg);
     color: var(--text);
@@ -191,7 +220,6 @@ footer {
     color: var(--emerald);
 }
 
-/* -- Language toggle button -- */
 /* -- Fade-in animation -- */
 .fade-in {
     opacity: 0;
@@ -270,4 +298,37 @@ footer {
         flex: 1;
         min-width: 120px;
     }
+}
+
+/* -- Contact -- */
+#contact {
+    text-align: center;
+}
+
+.contact-sub {
+    color: var(--muted);
+    margin-bottom: 40px;
+    font-size: 1rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-btn {
+    border: 1px solid var(--emerald);
+    color: var(--emerald);
+    padding: 12px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+}
+
+.contact-btn:hover {
+    background-color: var(--emerald);
+    color: var(--bg);
 }
