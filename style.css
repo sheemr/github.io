@@ -229,3 +229,45 @@ footer {
     background-color: var(--emerald);
     color: var(--bg);
 }
+
+/* -- Mobile responsiveness -- */
+@media (max-width: 768px) {
+
+    nav {
+        padding: 16px 24px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    section {
+        padding: 60px 24px;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 0.95rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-stats {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .stat {
+        flex: 1;
+        min-width: 120px;
+    }
+}
